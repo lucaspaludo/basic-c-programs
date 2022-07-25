@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main(void) {
+  
+    /*Escreva um programa para ler 2 valores inteiros e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4.
+    Multiplicação). Calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere que só serão lidos as operações 1, 2, 3 ou 4.*/
+
+    printf("Escolha a operação:\n1. soma (+)\n2. subtração (-)\n3. multiplicação (*)\n4. divisão (/)\nOpçao (1 a 4): ");
+    
+    int op;
+    scanf("%i", &op);
+    
+    float a, b;
+    switch(op){
+    case 1:
+    printf("Operação soma = a+b\n");
+    printf("Informe a: ");
+    scanf("%f", &a);
+    printf("Informe b: ");
+    scanf("%f", &b);
+    printf("Resultado: %.2f", a+b);
+    break;
+    case 2:
+    printf("Operação subtração = a-b\n");
+    printf("Informe a: ");
+    scanf("%f", &a);
+    printf("Informe b: ");
+    scanf("%f", &b);
+    printf("Resultado: %.2f", a-b);
+    break;
+    case 3:
+    printf("Operação multiplicação = a*b\n");
+    printf("Informe a: ");
+    scanf("%f", &a);
+    printf("Informe b: ");
+    scanf("%f", &b);
+    printf("Resultado: %.2f", a*b);
+    break;
+    case 4:
+    printf("Operação divisão = a/b\n");
+    printf("Informe a: ");
+    scanf("%f", &a);
+    printf("Informe b: ");
+    scanf("%f", &b);
+    printf("Resultado: %.2f", a/b);
+    break;
+    default:
+    puts("Operação incorreta");
+    }
+
+
+
+
+
+
+
+
+  return 0;
+}
