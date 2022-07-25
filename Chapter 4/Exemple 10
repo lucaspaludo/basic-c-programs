@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  float mat[5][5];
+  puts("\nSegue a MATRIX:");
+  for(int i = 0; i<5; i++){
+    for(int j = 0; j<5; j++){
+     if(i>j){
+       mat[i][j]=-2;
+     } else if(i==j){
+       mat[i][j]=1;
+     } else if(i<j){
+       mat[i][j]=2;
+     } else return 0;
+       
+    printf("%5.1f", mat[i][j]); 
+    }
+    printf("\n");
+  }
+
+  return 0;
+}
