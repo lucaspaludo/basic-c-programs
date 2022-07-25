@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void) {
+
+  /*Faça um programa que imprime a figura abaixo utilizando laços de repetição.
+  *
+  **
+  ***
+  ****
+  *****
+  Restrição: use pra imprimir na tela somente os comandos printf("*"); ou printf("\n");*/
+
+  int opcao;
+  
+  do{
+    printf("*");
+    printf("\n");
+    printf("*");
+    printf("*");
+    printf("\n");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("\n");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("\n");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("*");
+    printf("\n\nDigite 1 para continuar ou 2 para sair: "); scanf("%i", &opcao);
+  } while (opcao==1);
+
+
+  return 0;
+}
