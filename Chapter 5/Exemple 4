@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  FILE *fp;
+  int matrix [3][3];
+
+  fp = fopen("mat.txt","w");
+ 
+  if(fp==NULL){
+  printf("Erro na abertura do arquivo!");
+  return 1;
+  }
+
+  printf("Arquivo criado com sucesso!");
+  printf("\n\n### Iniciando arquivo ###");
+  printf("\n\nMatriz 1: \n");
+  for(int i = 0; i<3; i++){
+    for(int j = 0; j<3; j++){
+      printf("[%i][%i]: ",i,j);
+      scanf("%i", & matrix[i][j]);
+      fprintf(fp,"%i", matrix[i][j]);
+      }
+   }
+
+  for(int i = 0; i<3; i++){
+    for(int j = 0; j<3; j++){
+    printf("%5.1i", matrix[i][j]);
+    fprintf(fp,"%i", matrix[i][j]);
+    }
+    printf("\n");
+  }
+  
+
+  
+  fclose(fp);
+
+  printf("\n\nDados gravados com sucesso!!");
+
+
+
+
+  return 0;
+}
