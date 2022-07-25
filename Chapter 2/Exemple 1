@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Faça um programa utilizando o comando “for” que apresenta a sequência de
+  números de 5 (inclusive) até 20 (inclusive). Refaça o código utilizando o comando
+  “while”.*/
+  
+  for(int i=5; i<=20; i++) {
+    printf("\n%i",i);
+  }
+
+  return 0;
+}
