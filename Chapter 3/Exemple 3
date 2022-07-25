@@ -1,0 +1,48 @@
+#include <stdio.h>
+ 
+ /*7.13) Escreva um programa que leia 5 números inteiros positivos (utilize uma
+  função que leia esse número e verifique se ele é positivo). Para cada 
+  número informado escrever a soma de seus divisores (exceto ele mesmo).
+  Utilize a função SomaDivisores para obter a soma.
+  a) Nome: SomaDivisores
+  b) Descrição: Calcula a soma dos divisores do número informado (exceto
+  ele mesmo).
+  c) Entrada: Um número inteiro e positivo.
+  d) Saída: A soma dos divisores.
+  e) Exemplo: Para o valor 8: 1+2+4 = 7*/
+
+  int valor(int num){
+    if(num>0){
+      printf("\nPermitido!!\n");
+  return 0;
+ } else{
+    printf("\nErro!! Valor inválido\n"); 
+  return 0;
+  }
+ }
+
+  int somadivisores(int n){
+  int soma = 0;
+    for(int i = 1; i<n; i++){
+      if(n%i==0){
+        printf("\n%d é um divisor de %d\n", i, n);
+        soma = soma + i;
+    }
+  }
+  
+  printf("\n\nA soma dos divisores de %d é: %d",n, soma);
+  return 1;
+
+ }
+  
+  int main(void) {
+  int x;
+    printf("Insira um número: "); scanf("%d", & x);
+    valor(x);
+    if(valor(x)<0){
+    return 0; 
+  }
+  somadivisores(x);
+
+  return 0;
+}
