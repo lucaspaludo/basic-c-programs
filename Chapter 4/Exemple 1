@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+/*8.1) Faça um programa que cria um vetor com 3 elementos inteiros, lê os 3 números do teclado, armazena os números em um vetor e imprime o vetor na saída padrão.*/
+
+
+int main(void) {
+
+  int valor[3];
+  for(int i = 0; i<3; i++){
+    printf("Digite um valor: ");
+    scanf("%i", & valor[i]);
+  }
+  
+  for(int x = 0; x<3; x++){
+    printf("\nPosição %i: %i",x, valor[x]);
+  }
+
+
+
+
+  return 0;
+}
