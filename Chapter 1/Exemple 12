@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /* Faça um programa que pede ao operador para digitar a temperatura ambiente e utilizando comandos “if” ou “if-else”, faz o seguinte. Se a temperatura for maior ou igual a 40, imprime “Muito quente”, se a temperatura menor que 40 e maior ou igual a 30, imprime “Quente”, se a temperatura for menor que 30 e maior ou igual a 20, imprime
+  “Agradável” e se a temperatura for menor que 20, imprime “Frio”*/
+
+  printf("Informe a temperatura do ambiente: ");
+  float temp;
+  scanf("%f", &temp);
+  if(temp>=40) {
+  puts("Muito quente");
+  } else if(temp>=30){
+  puts("Quente");
+  } else if(temp>=20){
+  puts("Agradável");
+  } else {
+  puts("Frio");
+  }
+
+
+
+
+
+
+  return 0;
+}
