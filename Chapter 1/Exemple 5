@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Faça um programa que lê três números do teclado, descobre qual deles é o menor e imprime este número na tela.*/
+  
+  
+  int a,b,c;
+  printf("Número 1: "); scanf("%i", &a);
+  printf("Número 2: "); scanf("%i", &b);
+  printf("Número 3: "); scanf("%i", &c);
+  
+  if(a<b){
+  if(a<c){ 
+  printf("O menor número é: %i", a);
+  } else {
+  printf("O menor número é: %i", c);
+  }
+  } else {
+  if(b<c){
+  printf("O menor número é: %i", b);
+  } else {
+  printf("O menor número é: %i", c);
+  }
+  }
+
+
+  
+
+
+
+
+
+  return 0;
+}
