@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(void) {
+
+
+   /*Faça um programa que lê um número inteiro de 1 a 7 e imprime o dia da semana,
+  se o número estiver fora deste intervalo o programa deve imprimir uma mensagem de
+  erro.*/
+
+  
+  int n;
+  printf("Digite um número de 1 a 7: "); scanf("%i",&n);
+  if(n==1)
+  puts("Domingo");
+   else if (n==2)
+  puts("Segunda");
+    else if (n==3)
+  puts("Terça");
+    else if (n==4)
+  puts("Quarta");
+   else if (n==5)
+  puts("Quinta");
+   else if (n==6)
+  puts("Sexta");
+   else if (n==7)
+  puts("Sábado");
+  else 
+  puts("Erro! Você não digitou um número de 1 a 7");
+  
+
+
+ 
+ 
+ return 0;
+}
