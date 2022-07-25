@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Escreva abaixo o código de um programa que calcule a média de quilômetros feitos
+  com cada litro de combustível. Solicite a entrada de dados com quilômetros e litros e
+  depois exiba o calculo da média e caso seja menor que 6 km/l informe que é preciso
+  trocar o carro por um mais econômico.*/
+
+  float km, litros;
+  printf("Km: "); scanf("%f", &km);
+  printf("Litros: "); scanf("%f", &litros);
+  float media = km/litros;
+  printf("Média: %.2f km/l", media);
+  if(media<6){
+  printf("\nÉ preciso ter um carro mais econômico!");
+  } else if (media>6) {
+  printf("\nSeu carro está com uma média boa!");
+  } else {
+  printf("\nErro!");
+  }
+
+  return 0;
+}
