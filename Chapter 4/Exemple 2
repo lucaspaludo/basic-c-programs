@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+  /*8.2) Faça um programa que cria um vetor com 5 elementos inteiros, lê 5 números do teclado, armazena os números no vetor e imprime o vetor na ordem inversa.*/
+
+
+  int main(void) {
+
+  int valor[5];
+  for(int i = 0; i<5; i++){
+    printf("Digite um valor: ");
+    scanf("%i",& valor[i]);
+  }
+
+  for(int x = 4; x>=0; x--){
+    printf("\nValor: %i", valor[x]);
+  }
+  
+  return 0;
+}
