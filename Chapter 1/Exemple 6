@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Faça um programa que lê três notas (números reais), calcula a média entre elas, imprime a média, testa se a média é menor que 7, se for imprime “Aluno em exame!” e
+  se não for imprime “Aluno aprovado!”*/
+
+  float nota_1,nota_2,nota_3;
+  printf("Digite a primeira nota: "); scanf("%f",& nota_1);
+  printf("Digite a segunda nota: "); scanf("%f",& nota_2);
+  printf("Digite a terceira nota: "); scanf("%f",& nota_3);
+  
+  float media = (nota_1+nota_2+nota_3)/3;
+
+  if (media<7) {
+  printf("Aluno reprovado!");
+  } else if (media>=7) {
+  printf("Aluno aprovado!");
+  } else {
+  printf("Erro!");
+  }
+  
+
+  return 0;
+}
