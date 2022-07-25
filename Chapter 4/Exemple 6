@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+  /*8.9) Faça um programa que toma as notas dos alunos (15 números fracionários) do usuário e guarda em um vetor. Depois disso, calcula e imprime na tela a média dos
+  alunos, a nota mais alta, a nota mais baixa e o número de   notas 7.0.*/
+
+int main(void) {
+  float nota[15];
+  float maior, menor, soma=0, media;
+  int num;
+
+  for(int i = 0; i<15; i++){
+    printf("Informe a nota: ");
+    scanf("%f", &nota[i]);
+    if(nota[i]<0||nota[i]>10) return 0;
+    soma=soma+nota[i];
+    
+  }
+
+  maior=nota[0];
+  menor=nota[0];
+  
+  for(int i = 0; i<15; i++){
+    if(nota[i]>maior) maior = nota[i];
+    if(nota[i]<menor) menor = nota[i];
+    if(nota[i]==7){
+      num++;
+    }
+  }
+
+  printf("\nA maior nota é: %.2f", maior);
+  printf("\nA menor nota é %.2f", menor);
+  printf("\nA méda das notas é: %.2f",soma/15 );
+  printf("\nHá %i notas 7 no total", num);
+
+  return 0;
+}
