@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-  /*8.10) Faça um programa que ordene um vetor de dez números em ordem crescente. Ex.: inicialmente ele vale {2,78,5,-1,0,3,3,56,7,77} e é impresso na tela na sequência -1, 0, 2, 3, 3, 4, 5, 7, 56, 77. Sugestão: ache o menor valor do vetor e coloque na primeira
+  /* Faça um programa que ordene um vetor de dez números em ordem crescente. Ex.: inicialmente ele vale {2,78,5,-1,0,3,3,56,7,77} e é impresso na tela na sequência -1, 0, 2, 3, 3, 4, 5, 7, 56, 77. Sugestão: ache o menor valor do vetor e coloque na primeira
   posição; daí ache o segundo menor (basta procurar da segunda posição em diante) e coloque na segunda posição, e assim por diante. Este método é conhecido como inserção direta. Há vários outros (pode pesquisar).*/
 
  int main(void) {
