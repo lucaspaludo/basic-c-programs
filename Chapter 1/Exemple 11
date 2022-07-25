@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void) {
+  
+    /*Escreva um programa para ler o número de lados de um polígono regular e   a   medida do lado (em cm). Calcular e imprimir o seguinte:
+    Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área.
+    Se o número de lados for igual a 5 escrever PENTÁGONO. Caso o número de lados seja superior  a 5 escrever POLÍGONO NÃO IDENTIFICADO.*/
+
+    int qtde;
+    float medida_lado;
+
+    printf("Informe a quantidade de lados: ");
+    scanf("%i", &qtde);
+    printf("Informe a medida do lado: ");
+    scanf("%f", &medida_lado);
+    
+    if(qtde<=2)
+    puts("Erro!");
+    else if(qtde==3)
+    puts("Triangulo");
+    else if(qtde==4)
+    puts("Quadrado");
+    else if(qtde==5)
+    puts("Pentágono");
+    else if(qtde>5)
+    puts("Polígono não identificado");
+
+
+
+
+
+
+
+
+
+
+
+
+  return 0;
+}
