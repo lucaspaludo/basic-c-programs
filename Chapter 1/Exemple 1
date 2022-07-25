@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Escreva um programa para ler 2 valores (considere que não serão
+  informados valores iguais) e escrever o maior deles.*/
+
+  
+  int valor_1,valor_2;
+  printf("Digite um valor: "); scanf("%i",& valor_1);
+  printf("Digite um valor: "); scanf("%i",& valor_2);
+
+  if (valor_1>valor_2){
+  printf("\nO maior valor é: %d", valor_1);
+  }
+  else if (valor_2>valor_1) {
+  printf("\nO maior valor é: %d", valor_2);
+  }
+  else{
+  printf("Valor inválido");
+  }
+ 
+  return 0;
+}
