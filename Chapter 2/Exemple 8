@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+
+  /*Crie um programa que recebe números inteiros do usuário, imprime o quadrado do
+  número recebido e solicita o próximo número. Caso o número informado seja zero o
+  programa deve finalizar.*/
+ 
+ 
+ 
+ int a, i;
+ printf("Digite um número: "); scanf("%i", & a);
+ 
+ while(a!=i){
+   printf("O quadrado desse número é: %i", a*a);
+   printf("\n\nDigite um número: "); scanf("%i", & a);
+   i++;
+   if(a==0){
+   printf("Não é permitido elevar 0 ao quadrado nesse programa");
+   break;
+    } 
+  }
+
+
+  return 0;
+}
