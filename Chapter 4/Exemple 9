@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define N_LIN 3
+#define N_COL 4
+
+  /*Faça um programa que receba as dimensões da matriz, depois os valores e
+  apresenta a matriz transposta.*/
+
+  int main(void) {
+  float mat [N_LIN][N_COL];
+  printf("Informe a MATRIX:\n ");
+  for(int lin = 0; lin<N_LIN; lin++){
+    for(int col = 0; col<N_COL; col++){
+      printf("[%i][%i]: ", lin,col);
+      scanf("%f",&mat[lin][col] );
+    }
+  }
+  puts("\nA MATRIX transposta é:");
+  for(int lin = 0; lin<N_COL; lin++){
+    for(int col = 0; col<N_LIN; col++){
+    printf("%5.1f", mat[col][lin]);
+    }
+    printf("\n");
+  }
+
+  return 0;
+  }
