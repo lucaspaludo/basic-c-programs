@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Escreva um programa que imprima todos os números pares entre 0 e 50 e em
+  seguida imprima todos os números impares. Deixe um espaço entre os números.*/
+
+  puts("Números pares de 0 a 50:");
+  for(int i = 0; i<=50; i+=2){
+    printf("\n%i", i);
+  }
+
+  puts("\n\nNúmeros ímpares de 0 a 50:");
+  for(int x = 1; x<=50; x+=2){
+    printf("\n%i", x);
+  }
+
+
+  return 0;
+}
