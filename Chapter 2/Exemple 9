@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+
+
+  /*Dado um número inteiro positivo n, calcular a soma dos n primeiros
+  números naturais.*/
+
+
+  int a, i;
+  printf("Digite um número: "); scanf("%i", & a);
+  while(a){
+    int soma = ((a+1)*a)/2;
+    printf("A soma dos primeiros %i númeors naturais é: %i", a, soma-a);
+    printf("\n\nDigite um número: "); scanf("%i", & a);
+    i++;
+  } 
+  
+  return 0;
+}
