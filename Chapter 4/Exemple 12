@@ -1,0 +1,36 @@
+#include <stdio.h>
+#define QTDE_IDADE 5
+  /*8.21) Escreva um programa em linguagem C para capturar o nome e idade de várias pessoas. Ao final do primeiro cadastramento de nome e idade o programa deve solicitar
+  ao usuário que seja informado ‘c’ para continuar ou ‘s’ para sair. Ao final do cadastramento deve ser exibida uma lista com os nomes ao lado das idades e na última linha a quantidade de nomes e a média das idades informadas.*/
+
+  int main(void) {
+    char nomes[QTDE_IDADE][256];
+    int idades [10];
+    float soma = 0;
+    char opcao;
+  
+    puts("\n");
+    puts("------REGISTRO------");
+    for(int i = 0; i<QTDE_IDADE; i++){
+      printf("Digite o nome: ");
+      scanf("%s", nomes[i]);
+      printf("Digite a idade: ");
+      scanf("%i", &idades[i]);
+      soma = soma+idades[i];
+    }
+    printf("\nDigite 'c' para continuar ou 's' para sair: ");
+    scanf("%s", &opcao);
+    if(opcao=='s') return 0;
+    else if(opcao=='c'){
+      puts("\n------RELATÓRIO------");
+      for(int i = 0; i<QTDE_IDADE; i++){
+      printf("%s tem %i anos\n", nomes[i], idades[i]);
+      }
+      printf("\nForam registrados %i nomes", QTDE_IDADE);
+      printf("\nA média de idade é: %.2f", soma/QTDE_IDADE);
+      return 0;
+    }
+  
+
+  return 0;
+}
