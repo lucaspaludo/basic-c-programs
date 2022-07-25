@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+
+
+  /*Utilizando o comando “for”, faça um programa que imprime de 1 a 10 mil na tela, um
+  abaixo do outro, com exceção dos que são divisíveis por 10.*/
+
+  for(int i = 1; i<=10000; i++){
+    if(i%10!=0)
+    printf("\n%i",i);
+  }
+
+  return 0;
+}
