@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  FILE *fp;
+  char palavra [255];
+
+  fp = fopen("Palavra.txt","w");
+ 
+  if(fp==NULL){
+  printf("Erro na abertura do arquivo!");
+  return 1;
+  }
+
+  printf("Arquivo criado com sucesso!");
+  printf("\n\n### Iniciando arquivo ###");
+
+  printf("\nEscreva uma palavra: "); 
+  scanf("%s",palavra);
+
+  fprintf(fp,"%s",palavra);
+
+  fclose(fp);
+
+  printf("\n\nDados gravados com sucesso!!");
+  
+    return 0;
+}
