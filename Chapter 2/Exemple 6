@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Escreva abaixo um programa que imprime de 1 (inclusive) a 100 (inclusive) na tela, mas que não imprime o número 50, ou seja, após imprimir o 49 a próxima saída deverá
+  ser 51.*/
+
+  for(int i=1; i<=100; i++){
+    if(i<=49||i>=51){
+      printf("\n%i",i);
+    }
+  }
+
+
+  return 0;
+}
