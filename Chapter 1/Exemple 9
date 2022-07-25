@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  /*Escreva um programa que leia as medidas dos lados de um triângulo e escreva se   ele é Equilátero, Isósceles ou Escaleno. Sendo que:   Triângulo Equilátero: possui os 3 lados iguais. Triângulo Isóscele: possui 2 lados iguais.
+  Triângulo Escaleno: possui 3 lados diferentes.*/
+
+  float a,b,c;
+  printf("Informe a medida do lado 1: "); scanf("%f", &a);
+  printf("Informe a medida do lado 2: "); scanf("%f", &b);
+  printf("Informe a medida do lado 3: "); scanf("%f", &c);
+  
+  if(a==b && b==c)
+  puts("Equilatero");
+  else if(a==b || b==c || a==c)
+  puts("Isósceles");
+  else
+  puts("Escaleno");
+
+
+  return 0;
+}
