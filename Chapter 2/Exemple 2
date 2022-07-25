@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void) {
+  /*Modifique o programa anterior para que a sequência         apresentada seja de 20 (inclusive) a 5 (inclusive).*/
+  for(int i=20; i>=5; i--) {
+    printf("\n%i",i);
+  }
+  return 0;
+}
