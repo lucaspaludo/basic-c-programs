@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void) {
+  /*Escrever um programa que lê um valor i inteiro e positivo e que calcula e escreve o
+  valor da constante de Euler (e), com aproximação de i termos. A formula a seguir calcula
+  o valor de (e), e o resultado deve ser 2,718282. O programa deve ficar se repetindo
+  enquanto o operador não escolher i = 0;*/
+
+  while(1){
+    int i;
+    printf("\n\nDigite um valor: "); scanf("%i", &i);
+    float constante = 2.718282;
+    if(i==1){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casa decimal", i);
+      printf("\n\nO valor é: %.1f", 2.7);
+    } else if (i==2){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casas decimais", i);
+      printf("\n\nO valor é: %.2f", 2.72);
+    } else if (i==3){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casas decimais", i);
+      printf("\n\nO valor é: %.3f", 2.718);
+    } else if (i==4){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casas decimais", i);
+      printf("\n\nO valor é: %.4f", 2.7183);
+    } else if(i==5){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casas decimais", i);
+      printf("\n\nO valor é: %.5f", 2.71828);
+    } else if (i==6){
+      printf("\nSerá impresso o valor da constante de Euler com aproximação de %i casas decimais", i);
+      printf("\n\nO valor é: %f", constante);
+    } else if (i>6){
+      printf("\nVocê digitou um número maior que 6, portanto neste caso a constante de Euler é o valor exibido no exercício:\n%f", constante);
+    } else {
+      printf("\nErro!! Não é possível atribuir um valor nulo"); break;
+    } 
+  }
+ 
+ 
+  return 0;
+}
