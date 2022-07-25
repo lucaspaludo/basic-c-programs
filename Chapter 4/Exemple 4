@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/*Faça um programa que leia um número indeterminado de idades (crie um vetor com 10 mil elementos). A última idade lida, que não entrará nos cálculos, deverá ser igual a zero, ou seja, se a idade informada for zero o programa finaliza e exibe os dados de quantas idades foram lidas. Deve-se também calcular e escrever a média de idade desse grupo de idades.*/
+
+
+int main(void){
+
+int idade[10000];
+float soma = 0;
+
+for(int i = 0; i<10000;i++){
+  printf("Informe a idade: ");
+  scanf("%i", &idade[i]);
+  soma=soma+idade[i];
+  if(idade[i]==0){
+    printf("\nFoi lido %i idade(s)", i);
+    printf("\nA média de idade é de: %.2f", soma/i);
+    break;
+    } 
+  }    
+
+return 0;
+}
