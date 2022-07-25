@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+/*8.14) Faça um programa que receba duas matrizes de dimensões 3x3 e apresente a soma de seus elementos.
+A adição de duas matrizes se dá pela soma de seus termos correspondentes.
+Esquematicamente, se A + B = C, então cij = aij + bij
+Assim, sendo a soma de duas matrizes só está definida quando elas possuem a mesma ordem (número de linhas e colunas):*/
+
+
+int main(void) {
+  float m1[3][3],m2[3][3];
+  printf("Matriz 1: \n");
+  for(int i = 0; i<3; i++){
+    for(int j = 0; j<3; j++){
+      printf("[%i][%i]: ",i,j);
+      scanf("%f", & m1[i][j]);
+    }
+  }
+
+  printf("Matriz 2: \n");
+    for(int i = 0; i<3; i++){
+      for(int j = 0; j<3; j++){
+        printf("[%i][%i]: ",i,j);
+        scanf("%f", & m2[i][j]);
+    }
+  }
+ float m3[3][3];
+  for(int i = 0; i<3; i++){
+    for(int j = 0; j<3; j++){
+      m3[i][j]= m1[i][j] + m2[i][j];
+    }
+  }
+  puts("O resultado da soma é:");
+  for(int i = 0; i<3; i++){
+    for(int j = 0; j<3; j++){
+      printf("%8.1f", m3[i][j]);
+    }
+    printf("\n");
+  }
+
+  return 0;
+}
