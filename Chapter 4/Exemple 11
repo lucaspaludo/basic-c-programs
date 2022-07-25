@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/* Faça um programa que criptografa uma mensagem informada pelo usuário (via
+scanf() ou gets()) e exibe a mensagem criptografada na tela. A criptografia deverá ser
+realizada alterando os caracteres através da soma de 1 inteiro referente ao código da
+tabela ACSII ou seja, a letra ‘a’ na mensagem será exibida como ‘b’, a letra ‘d’ como ‘e’ e assim por diante.*/
+
+int main(void) {
+  char str [255];
+  printf("\nEscreva uma mensagem: ");
+  gets(str);
+
+  for(int i = 0; i<255; i++){
+    if(str[i]=='\0'){
+      return 0;
+    } else printf("%c",str[i]+1);
+  }
+
+
+
+  return 0;
+}
