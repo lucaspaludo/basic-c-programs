@@ -1,0 +1,25 @@
+#include <stdio.h>
+  
+    /*7.8) Crie a função void imprime_espacos (int n_espacos) e a função void
+  imprime_asteriscos (int n_asteriscos); elas devem imprimir na tela, sem pular linha,
+  vários caracteres (espaços e asteriscos, respectivamente), de acordo com o número
+  passado pelo parâmetro.*/
+
+  void imprime_espacos (int n_espacos){
+    for(int i = 0; i<=n_espacos;i++){
+      printf(" ");
+    }
+  }
+  void imprime_asteriscos (int n_asteriscos){
+    for(int i = 0; i<=n_asteriscos; i++){
+        printf("*");
+      }
+    }
+  
+  int main(void) {
+  imprime_espacos(500);
+  imprime_asteriscos(800);
+  
+
+  return 0;
+}
