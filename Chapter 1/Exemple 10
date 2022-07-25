@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(void) {
+  
+  /*Escreva um programa que leia o valor de 3 ângulos de um triângulo e escreva se o triângulo é Acutângulo, Retângulo ou Obtusângulo. Sendo que:
+  Triângulo Retângulo: possui um ângulo reto. (igual a 90o) Triângulo Obtusângulo: possui um ângulo obtuso. (maior que 90o)
+  Triângulo Acutângulo: possui três ângulos agudos. (menor que 90o)*/
+
+
+  float a,b,c;
+  printf("Informe o valor do ângulo 1: "); scanf("%f", &a);
+  printf("Informe o valor do ângulo 2: "); scanf("%f", &b);
+  printf("Informe o valor do ângulo 3: "); scanf("%f", &c);
+
+  if(a==90 || b==90 || c==90)
+  puts("Retângulo");
+  else if(a>90 || b>90 || c>90)
+  puts("Obtusângulo");
+  else
+  puts("Acutângulo");
+  return 0;
+
+  printf("Ângulo 1: "); scanf("%f", &a);
+  printf("Ângulo 2: "); scanf("%f", &b);
+  printf("Ângulo 3: "); scanf("%f", &c);
+
+  if(a==90 || b==90 || c==90)
+  puts("Retângulo");
+  else if(a>90 || b>90 || c>90)
+  puts("Obtusângulo");
+  else
+  puts("Acutângulo");
+
+
+ 
+
+
+
+
+  return 0;
+}
